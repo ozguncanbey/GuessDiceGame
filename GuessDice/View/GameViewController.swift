@@ -17,6 +17,7 @@ class GameViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var guessButton: UIButton!
     @IBOutlet weak var againButton: UIButton!
+    @IBOutlet weak var upDownSignLabel: UILabel!
     
     var remainingPredict = ViewController.remainingPredict
     var predict = 0
@@ -56,15 +57,33 @@ class GameViewController: UIViewController {
                 if predict == result {
                     againButton.isHidden = false
                     guessButton.isEnabled = false
+                    upDownSignLabel.isHidden = true
                     resultLabel.text = "Correct!"
                     againButton.titleLabel?.text = "Play Again"
                     predictLabel.text = "Remaining Predictions: \(remainingPredict + 1)"
                     firstDiceImageView.image = showDice(firstRandom)
                     secondDiceImageView.image = showDice(secondRandom)
+                } else if predict < result {
+                    if remainingPredict > 0 {
+                        predictLabel.text = "Remaining Predictions: \(remainingPredict)"
+                        predictTextField.text = ""
+                        upDownSignLabel.isHidden = false
+                        upDownSignLabel.text = "⬆"
+                    } else {
+                        againButton.isHidden = false
+                        predictLabel.text = "Remaining Predictions: \(remainingPredict)"
+                        resultLabel.text = "Wrong!"
+                        againButton.titleLabel?.text = "Try Again"
+                        firstDiceImageView.image = showDice(firstRandom)
+                        secondDiceImageView.image = showDice(secondRandom)
+                        guessButton.isEnabled = false
+                    }
                 } else {
                     if remainingPredict > 0 {
                         predictLabel.text = "Remaining Predictions: \(remainingPredict)"
                         predictTextField.text = ""
+                        upDownSignLabel.isHidden = false
+                        upDownSignLabel.text = "⬇"
                     } else {
                         againButton.isHidden = false
                         predictLabel.text = "Remaining Predictions: \(remainingPredict)"
@@ -87,6 +106,7 @@ class GameViewController: UIViewController {
         rollButton.isEnabled = true
         againButton.isHidden = true
         guessButton.isEnabled = true
+        upDownSignLabel.isHidden = true
         resultLabel.text = ""
         remainingPredict = ViewController.remainingPredict
         predict = 0
