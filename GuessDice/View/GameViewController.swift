@@ -18,7 +18,7 @@ class GameViewController: UIViewController {
     @IBOutlet weak var guessButton: UIButton!
     @IBOutlet weak var againButton: UIButton!
     
-    var remainingPredict = 5
+    var remainingPredict = ViewController.remainingPredict
     var predict = 0
     var result = 0
     var firstRandom = 0
@@ -30,8 +30,7 @@ class GameViewController: UIViewController {
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(closeKeyboard))
         view.addGestureRecognizer(gestureRecognizer)
         
-        resultLabel.text = ""
-        againButton.isHidden = true
+        restart()
     }
     
     @objc func closeKeyboard() {
@@ -89,7 +88,7 @@ class GameViewController: UIViewController {
         againButton.isHidden = true
         guessButton.isEnabled = true
         resultLabel.text = ""
-        remainingPredict = 5
+        remainingPredict = ViewController.remainingPredict
         predict = 0
         result = 0
         predictTextField.text = ""
