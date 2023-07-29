@@ -13,11 +13,6 @@ GuessDiceGame is an exciting iOS app that challenges players to guess the total 
 - "Wrong" message and "Try Again" button for incorrect guesses.
 - Ability to reset the game and change the number of allowed guesses.
 
-## Screenshots
-![Home Screen](https://imgur.com/uSbrC6t)
-![Game Screen](https://imgur.com/drKfDPw)
-
-
 ## Technologies Used
 - Swift: Programming language for iOS app development.
 - Xcode: Integrated development environment for iOS app development.
