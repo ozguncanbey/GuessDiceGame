@@ -14,10 +14,11 @@ GuessDiceGame is an exciting iOS app that challenges players to guess the total 
 - Ability to reset the game and change the number of allowed guesses.
 
 ## Screenshots
-* (https://github.com/ozguncanbey/GuessDiceGame/assets/138692325/dd924372-92f7-48b4-968c-6fdd10b15a7b)
-* (https://github.com/ozguncanbey/GuessDiceGame/assets/138692325/b8cdec70-da96-4a54-a1ca-d44202c9e4f1)
-* (https://github.com/ozguncanbey/GuessDiceGame/assets/138692325/e820298b-b33f-468d-b808-543f16e6fb82)
-* (https://github.com/ozguncanbey/GuessDiceGame/assets/138692325/089d6cdc-77f1-45e8-a0ea-6d88ccf6e202)
+
+<img src="https://github.com/ozguncanbey/GuessDiceGame/assets/138692325/dd924372-92f7-48b4-968c-6fdd10b15a7b" width="300"/>
+<img src="https://github.com/ozguncanbey/GuessDiceGame/assets/138692325/b8cdec70-da96-4a54-a1ca-d44202c9e4f1" width="300"/>
+<img src="https://github.com/ozguncanbey/GuessDiceGame/assets/138692325/e820298b-b33f-468d-b808-543f16e6fb82" width="300"/>
+<img src="https://github.com/ozguncanbey/GuessDiceGame/assets/138692325/089d6cdc-77f1-45e8-a0ea-6d88ccf6e202" width="300"/>
 
 ## Technologies Used
 - Swift: Programming language for iOS app development.
@@ -28,7 +29,7 @@ Unfortunately, GuessDiceGame is not available on the App Store at the moment. Ho
 
 1. Clone the GuessDiceGame repository from GitHub:
    ```
-   git clone https://github.com/your-username/GuessDiceGame.git
+   git clone https://github.com/ozguncanbey/GuessDiceGame.git
    ```
 
 2. Open the project in Xcode.
